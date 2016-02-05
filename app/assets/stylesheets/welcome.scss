@@ -25,3 +25,14 @@ section {
 	margin: 5px 5px 5px 5px;
 	padding: 5px 5px 5px 5px;
 }
+
+.social-btn {
+	background: #337ab7;
+	color: white;
+}
+
+a.social-btn:hover {
+	text-decoration: none;
+	color: white;
+	background: #2e6da4;
+}
