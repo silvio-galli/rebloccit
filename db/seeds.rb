@@ -6,7 +6,7 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-require_relative '../lib/random_data.rb'
+require 'random_data'
 
 # Create posts
 50.times do
