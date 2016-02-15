@@ -25,4 +25,5 @@ module RandomData
 		end
 		sentences.join(" ")
 	end
+
 end

@@ -1,0 +1,31 @@
+<h1>Edit "<%= @sponsored_post.title %>"</h1>
+
+<div class="row">
+	<div class="col-md-4">
+		<p>Guidelines to edit sponsored posts</p>
+		<ul>
+			<li>bla bla bla</li>
+			<li>bla bla bla</li>
+			<li>bla bla bla</li>
+		</ul>
+	</div>
+	<div class="col-md-8">
+		<%= form_for [@sponsored_post.topic, @sponsored_post] do |f| %>
+			<div class="form-group">
+				<%= f.label :title %>
+				<%= f.text_field :title, class: 'form-control', placeholder: "Edit the title of the post" %>
+			</div>
+			<div class="form-group">
+				<%= f.label :body %>
+				<%= f.text_area :body, class: 'form-control', placeholder: "Edit the post" %>
+			</div>
+			<div class="form-group">
+				<%= f.label :price %>
+				<%= f.number_field :price %> &euro;
+			</div>
+			<div class="form-group">
+				<%= f.submit "Save", class: 'btn btn-success' %>
+			</div>
+		<% end %>
+	</div>
+</div>
