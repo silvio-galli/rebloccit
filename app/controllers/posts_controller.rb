@@ -54,6 +54,9 @@ class PostsController < ApplicationController
     end
   end
 
+  scope :ordered_by_title, -> { order('title ASC') }
+  scope :ordered_by_reverse_created_at, -> { order('created_at ASC') }
+
   private
   
     def post_params
